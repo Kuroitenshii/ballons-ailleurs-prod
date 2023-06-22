@@ -44,3 +44,30 @@ img {
 .blue-text{
     color: #3273dc;
 }
+
+.bordered{
+    border: 2px solid black;
+}
+
+.flex-full{
+    flex-basis: 100%;
+}
+
+.flex-quarter{
+    flex-basis: 25%;
+}
+.flex-half{
+    flex-basis: 50%;
+}
+.flex-three-quarter{
+    flex-basis: 75%;
+}
+.flex-quarter-and-half{
+    flex-basis: calc(75% / 2);
+}
+.full-height{
+    height: 100%;
+}
+.big-text{
+    font-size: 1.5rem;
+}
