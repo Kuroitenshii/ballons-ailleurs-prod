@@ -77,3 +77,8 @@ img {
 .big-text{
     font-size: 1.5rem;
 }
+
+.is-logo{
+    height: 200px;
+    width: 200px;
+}
