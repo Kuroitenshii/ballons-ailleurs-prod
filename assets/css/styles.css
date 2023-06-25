@@ -65,6 +65,12 @@ img {
 .flex-quarter-and-half{
     flex-basis: calc(75% / 2);
 }
+.flex-two-of-five{
+    flex-basis: 40%;
+}
+.flex-one-of-five{
+    flex-basis: 20%;
+}
 .full-height{
     height: 100%;
 }
