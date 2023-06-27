@@ -41,6 +41,10 @@ img {
     gap: 10px;
 }
 
+.gap-50{
+    gap: 50px;
+}
+
 .blue-text{
     color: #3273dc;
 }
@@ -68,6 +72,9 @@ img {
 .flex-two-of-five{
     flex-basis: 40%;
 }
+.flex-three-of-five{
+    flex-basis: 60%;
+}
 .flex-one-of-five{
     flex-basis: 20%;
 }
@@ -81,4 +88,8 @@ img {
 .is-logo{
     height: 200px;
     width: 200px;
+}
+
+.w400px{
+    width: 400px;
 }
