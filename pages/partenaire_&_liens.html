@@ -13,9 +13,18 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5XTPQG69');</script>-->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XTPQG69"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar is-dark">
         <div class="navbar-brand">
             <a class="navbar-item" href="../index.html">
@@ -49,9 +58,23 @@
                         </a>
                     </div>
                 </div>
-                <a class="navbar-item is-tab" href="./montgolfiade.html">
-                    Montgolfiades 2023
-                </a>
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-link" href="#">
+                        Montgolfiades 2023
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item is-tab" href="./montgolfiade.html">
+                            Présentation
+                        </a>
+                        <a class="navbar-item is-tab " href="./reglement-concours.html">
+                            Concours de photographie
+                        </a>
+                        <a class="navbar-item is-tab is-hidden" href="./asssociations_Sud_Aveyron.html">
+                            Planning (en construction)
+                        </a>
+                    </div>
+                </div>
                 <a class="navbar-item is-tab" href="./decouverte.html">
                     Vol découverte
                 </a>
@@ -75,33 +98,65 @@
 
     <section class="section">
         <div class="is-flex is-justify-content-center is-align-content-center is-center is-flex-wrap-wrap gap-50">
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/Bouscaillous.webp" alt="Parc de loisir des Bouscaillous">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/cclv.webp" alt="Communauté de communes Larzac & Vallées">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/Enedis.webp" alt="Enedis">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/Groupama.webp" alt="Groupama">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/Le12.webp" alt="Restaurant le 12">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/Rail_Larzac.webp" alt="Sur les Rails du Larzac">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/Roquefort_Société.webp" alt="Roquefort Société">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/RTE.webp" alt="Réseau de Transport d'Electricité">
-            </figure>
-            <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
-                <img src="../assets/images/partenaires/Village_Sainte_Eulalie.webp" alt="Sainte-Eulalie-de-Cernon">
-            </figure>
+            <a target="_blank" href="https://www.parc-bouscaillous.fr">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Bouscaillous.webp" alt="Parc de loisir des Bouscaillous">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.cc-larzacvallees.fr/fr">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/cclv.webp" alt="Communauté de communes Larzac & Vallées">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.enedis.fr">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Enedis.webp" alt="Enedis">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.groupama.fr">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Groupama.webp" alt="Groupama">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.facebook.com/restaurantle12/?locale=fr_FR">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Le12.webp" alt="Restaurant le 12">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.surlesrailsdularzac.com">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Rail_Larzac.webp" alt="Sur les Rails du Larzac">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.roquefort-societe.com">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Roquefort_Société.webp" alt="Roquefort Société">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.rte-france.com">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/rte.webp" alt="Réseau de Transport d'Electricité">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://www.tourisme-aveyron.com/fr/voir-faire/decouvrir-aveyron/villes-et-villages/sainte-eulalie-cernon/decouvrir-sainte-eulalie">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Village_Sainte_Eulalie.webp" alt="Sainte-Eulalie-de-Cernon">
+                </figure>
+            </a>
+
+            <a target="_blank" href="https://caveau-du-mas.com">
+                <figure class="w400px full-height is-flex is-align-content-center is-justify-content-center is-logo">
+                    <img src="../assets/images/partenaires/Caveau_du_mas.webp" alt="Le caveau du mas">
+                </figure>
+            </a>
         </div>
     </section>
 

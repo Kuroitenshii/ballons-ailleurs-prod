@@ -9,9 +9,9 @@ $(document).ready(function() {
   
     });
     $(".navbar-link").click(function() {
-  
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".has-dropdown").toggleClass("is-active");
+        $(".has-dropdown.is-active").toggleClass("is-active")
+        $(this).closest(".has-dropdown").toggleClass("is-active");
   
     });
   });
