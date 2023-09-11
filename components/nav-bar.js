@@ -2,20 +2,26 @@ customElements.define("nav-a", class extends HTMLElement {
     connectedCallback() {
         setTimeout(() => { // make sure innerHTML is parsed
             let startLink = "./"
-            if (location.href.includes("index")) {
+            let indexLink = "../"
+            if (location.href.includes("index") || window.location.pathname == "/") {
                 startLink = "./pages/"
+                indexLink = "./"
             }
             let klass = "navbar-item is-tab"
             let href = this.getAttribute("file");
             const title = this.getAttribute("title")
-            if (location.href.includes(href) && title != "Ballons-ailleurs") {
+            let link = startLink+href
+            if ((location.href.includes(href) && title != "Ballons-ailleurs") || (title == "Accueil" && window.location.pathname == "/")) {
                 const drop = this.getAttribute("id-drop")
                 if (drop) {
                     document.querySelector(`#${drop}`).classList.add("is-active")
                 }
                 klass = "navbar-item is-tab is-active";
             }
-            this.innerHTML = `<a class="${klass}" href="${startLink + href}.html">${title}</a>`;
+            if (href == "index") {
+                link = indexLink+href
+            }
+            this.innerHTML = `<a class="${klass}" href="${link}.html">${title}</a>`;
         });
     }
 });
