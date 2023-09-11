@@ -10,6 +10,7 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script type="module" src="./components/nav-bar.js" defer></script>
     <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -22,68 +23,7 @@
 <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XTPQG69"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
     <!-- End Google Tag Manager (noscript) -->
-    <nav class="navbar is-dark">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                Ballons-ailleurs
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div class="navbar-menu" id="navbarMenu">
-            <div class="navbar-start">
-            </div>
-            <div class="navbar-end is-tab">
-                <a class="navbar-item is-tab is-active" href="#">
-                    Accueil
-                </a>
-                <div class="navbar-item has-dropdown">
-                    <a class="navbar-link " href="#">
-                        Association
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item is-tab" href="./pages/asssociations_Haute-Garrone.html">
-                            Haute-Garonne
-                        </a>
-                        <a class="navbar-item is-tab " href="./pages/asssociations_Sud_Aveyron.html">
-                            Sud-Aveyron
-                        </a>
-                    </div>
-                </div>
-                <div class="navbar-item has-dropdown">
-                    <a class="navbar-link" href="#">
-                        Montgolfiades 2023
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item is-tab" href="./pages/montgolfiade.html">
-                            Présentation
-                        </a>
-                        <a class="navbar-item is-tab " href="./pages/reglement-concours.html">
-                            Concours de photographie
-                        </a>
-                        <a class="navbar-item is-tab is-hidden" href="">
-                            Planning (en construction)
-                        </a>
-                    </div>
-                </div>
-                <a class="navbar-item is-tab" href="./pages/decouverte.html">
-                    Vols Découverte
-                </a>
-                <a class="navbar-item is-tab" href="./pages/galerie.html">
-                    Galerie
-                </a>
-                <a class="navbar-item is-tab" href="./pages/partenaire_&_liens.html">
-                    Partenaires & Liens
-                </a>
-            </div>
-        </div>
-    </nav>
+    <nav-bar></nav-bar>
 
     <section class="hero">
         <figure class="image">

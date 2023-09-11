@@ -93,3 +93,7 @@ img {
 .w400px{
     width: 400px;
 }
+
+.very-small-padding{
+    padding: 20px;
+}
