@@ -7,7 +7,6 @@ customElements.define("nav-a", class extends HTMLElement {
                 startLink = "./pages/"
                 indexLink = "./"
             }
-            console.log(window.location.pathname);
             let klass = "navbar-item is-tab"
             let href = this.getAttribute("file");
             const title = this.getAttribute("title")
