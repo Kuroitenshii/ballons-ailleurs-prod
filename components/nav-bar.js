@@ -7,6 +7,7 @@ customElements.define("nav-a", class extends HTMLElement {
                 startLink = "./pages/"
                 indexLink = "./"
             }
+            console.log(window.location.pathname);
             let klass = "navbar-item is-tab"
             let href = this.getAttribute("file");
             const title = this.getAttribute("title")
@@ -75,7 +76,7 @@ class navBar extends HTMLElement {
             </div>
             <nav-a file="vols_decouverte" title="Vols Découverte"></nav-a>
             <nav-a file="galerie" title="Galerie"></nav-a>
-            <nav-ahref="partenaire_&_liens" title="Partenaires & Liens"></nav-a>
+            <nav-a file="partenaire_&_liens" title="Partenaires & Liens"></nav-a>
         </div>
     </div>`
         this.appendChild(nav)
