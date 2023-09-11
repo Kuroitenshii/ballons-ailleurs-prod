@@ -3,7 +3,7 @@ customElements.define("nav-a", class extends HTMLElement {
         setTimeout(() => { // make sure innerHTML is parsed
             let startLink = "./"
             let indexLink = "../"
-            if (location.href.includes("index") || window.location.pathname == "/") {
+            if (location.href.includes("index") || (window.location.pathname == "/" || window.location.pathname == "/ballons-ailleurs-prod/")) {
                 startLink = "./pages/"
                 indexLink = "./"
             }
@@ -11,7 +11,7 @@ customElements.define("nav-a", class extends HTMLElement {
             let href = this.getAttribute("file");
             const title = this.getAttribute("title")
             let link = startLink+href
-            if ((location.href.includes(href) && title != "Ballons-ailleurs") || (title == "Accueil" && window.location.pathname == "/")) {
+            if ((location.href.includes(href) && title != "Ballons-ailleurs") || (title == "Accueil" && (window.location.pathname == "/" || window.location.pathname == "/ballons-ailleurs-prod/"))) {
                 const drop = this.getAttribute("id-drop")
                 if (drop) {
                     document.querySelector(`#${drop}`).classList.add("is-active")
