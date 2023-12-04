@@ -10,8 +10,12 @@ $(document).ready(function() {
     });
     $(".navbar-link").click(function() {
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".has-dropdown.is-active").toggleClass("is-active")
-        $(this).closest(".has-dropdown").toggleClass("is-active");
+        const prevActive = $(".has-dropdown.is-active")
+        const newActive = $(this).closest(".has-dropdown")
+        if(prevActive[0] != undefined && prevActive[0] != newActive[0]){
+            prevActive.toggleClass("is-active");
+        }
+        newActive.toggleClass("is-active");
   
     });
   });

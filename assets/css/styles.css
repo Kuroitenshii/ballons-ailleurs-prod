@@ -2,6 +2,10 @@ img {
     max-height: 800px;
 }
 
+.img-modal{
+    cursor: pointer;
+}
+
 .navbar-item.is-tab,
 .navbar-link {
     background-color: #363636;

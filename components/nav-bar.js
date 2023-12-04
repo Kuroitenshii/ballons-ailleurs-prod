@@ -69,8 +69,6 @@ class navBar extends HTMLElement {
 
                 <div class="navbar-dropdown">
                     <nav-a file="montgolfiade" title="Présentation" id-drop="montgolfiades-drop"></nav-a>
-                    <nav-a file="reglement-concours" title="Concours de photographie"  id-drop="montgolfiades-drop"></nav-a>
-                    <nav-a file="planning_activite" title="Planning" id-drop="montgolfiades-drop"></nav-a>
                 </div>
             </div>
             <nav-a file="vols_decouverte" title="Vols Découverte"></nav-a>

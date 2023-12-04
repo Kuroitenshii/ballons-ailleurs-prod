@@ -17,31 +17,46 @@ const imgList = [
     "vue sur la region avec des ballons"
 ]
 
-const gallery = document.querySelector("#gallery")
-const fragment = document.createDocumentFragment()
-for (const image of imgList) {
-    const container = document.createElement("div")
-    const underscored_title = image.replaceAll(" ", "_")
-    const link = "../assets/images/media/" + underscored_title + ".webp"
-    container.classList.add("column", "is-one-quarter-desktop", 'is-half-tablet')
-    container.dataset.title = link
-    container.dataset.alt = image
-    container.innerHTML = `<div class="card">
+function init() {
+    displayModal()
+    setImgListener()
+}
+init()
+
+function displayModal() {
+    const gallery = document.querySelector("#gallery")
+    const fragment = document.createDocumentFragment()
+    for (const image of imgList) {
+        const container = document.createElement("div")
+        const underscored_title = image.replaceAll(" ", "_")
+        const link = "../assets/images/media/" + underscored_title + ".webp"
+        container.classList.add("column", "is-one-quarter-desktop", 'is-half-tablet', 'img-modal')
+        container.dataset.src = link
+        container.dataset.alt = image
+        container.innerHTML = `<div class="card">
                                 <div class="card-image">
                                     <figure class="image is-3by2">
                                         <img src="${link}" alt="${image}">
                                     </figure>
                                 </div>
                             </div>`
-    container.addEventListener("click", (e) => {
-        document.getElementById("modal1").classList.add("is-active");
-        const imgContainer = document.getElementById("modal-img")
-        imgContainer.src = link
-        imgContainer.alt = image
-    })
-    fragment.appendChild(container)
+        fragment.appendChild(container)
+    }
+    gallery.appendChild(fragment)
 }
-gallery.appendChild(fragment)
+
+function setImgListener() {
+    const allImage = document.querySelectorAll(".img-modal")
+    for (const img of allImage) {
+        img.addEventListener("click", (e) => {
+            const parent = e.target.closest(".img-modal")
+            document.getElementById("modal1").classList.add("is-active");
+            const imgContainer = document.getElementById("modal-img")
+            imgContainer.src = parent.dataset.src
+            imgContainer.alt = parent.dataset.alt
+        })
+    }
+}
 
 // JavaScript code to open and close the modal
 
